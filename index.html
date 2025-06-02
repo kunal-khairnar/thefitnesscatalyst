@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <!-- Calendly badge widget end -->
+
+
+    <title>The Fitness Catalyst</title>
+</head>
+
+<body>
+
+    <!-- [][][][][][][][][][]]][][][]Header section start [][][][][][][][][][[[]][][[]][][][][][][[[][][]-->
+    <!--- video slider start -->
+    <div class="videoslider-container">
+        <video playsinline autoplay muted loop id="bg-video">
+            <source src="vid/doc-video-mp4.mp4" type="video/mp4">
+            <source src="vid/doc-video-webm.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        <div class="videoslider-overlay"></div>
+    </div>
+
+    <div class="container">
+        <div class="videoslider-content">
+            <div class="videoslider-title-container">
+                <div class="videoslider-title-row">
+                    <div class="videoslider-title-word"><span><span class="videoslider-highlight">6</span> WEEK</span>
+                    </div>
+                </div>
+                <div class="videoslider-title-row">
+                    <div class="videoslider-title-word"><span>TRANSFORMATION</span></div>
+                </div>
+                <div class="videoslider-title-row">
+                    <div class="videoslider-title-word"><span>PROGRAM</span></div>
+                </div>
+            </div>
+
+            <div class="videoslider-button-container">
+                <button class="videoslider-cta-button payment-trigger">Start Your Journey</button>
+            </div>
+
+            <div class="videoslider-sub-text">Book your free consultation call today!</div>
+
+            <!-- Success message for returning after payment -->
+            <div id="paymentSuccessMessage" class="success-message">
+                Payment successful! You can now book your consultation.
+                <button class="videoslider-cta-button calendly-trigger" style="margin-top: 15px;">Schedule Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Book Your Consultation</h2>
+            <p class="payment-description">Complete a small payment to unlock your booking calendar</p>
+            <div class="payment-amount">₹49</div>
+            <div class="loading-spinner" id="paymentLoader"></div>
+            <button id="phonePayButton" class="pay-button">Pay Now with PhonePe</button>
+        </div>
+    </div>
+
+
+    <!--- video slider end -->
+
+
+
+    <!-- Main Navigation -->
+    <nav class="lionfit-main-nav" id="lionfitMainNav">
+        <a href="#" class="lionfit-logo-text">FITNESS CATALYST</a>
+        <div class="lionfit-hamburger" id="lionfitHamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="lionfit-nav-links" id="lionfitNavLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About</a></li>
+
+            <li><a href="results.html">Results</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    </div>
+
+    <!-- [][][][][li><a href="#">Programs</a></li>][][][][][]]][][][]Header section end [][][][][][][][][][[[]][][[]][][][][][][[[][][]-->
+
+
+
+    <!-- image scroll start here   ------------/////////////////////////////////--------------------->
+
+
+
+
+
+    <div class="imagescroll_section_block" id="workout">
+        <div class="imagescroll_bg_container">
+            <img src="img/workout1.jpeg" alt="Workout Background 1"
+                class="imagescroll_bg_image imagescroll_bg_image_left" id="workout-img-1">
+            <img src="img/work2.jpg" alt="Workout Background 2" class="imagescroll_bg_image imagescroll_bg_image_right"
+                id="workout-img-2">
+        </div>
+        <div class="imagescroll_content_wrapper">
+            <h2 class="imagescroll_title_heading">Workout Plan</h2>
+            <p class="imagescroll_text_description">Personalized workout routines tailored to your fitness level and
+                goals. Our expert trainers design programs that evolve as you progress.</p>
+            <button class="imagescroll_action_button">Get Started</button>
+        </div>
+    </div>
+
+    <div class="imagescroll_section_block" id="nutrition">
+        <div class="imagescroll_bg_container">
+            <img src="img/nut1.jpg" alt="Nutrition Background 1" class="imagescroll_bg_image imagescroll_bg_image_left"
+                id="nutrition-img-1">
+            <img src="img/nut2.jpg" alt="Nutrition Background 2" class="imagescroll_bg_image imagescroll_bg_image_right"
+                id="nutrition-img-2">
+        </div>
+        <div class="imagescroll_content_wrapper">
+            <h2 class="imagescroll_title_heading">Nutrition Plan</h2>
+            <p class="imagescroll_text_description">Customized meal plans that complement your workout routine. Fuel
+                your body with the right nutrients to maximize your results.</p>
+            <button class="imagescroll_action_button">Learn More</button>
+        </div>
+    </div>
+
+    <div class="imagescroll_section_block" id="review">
+        <div class="imagescroll_bg_container">
+            <img src="img/rev1.jpg" alt="Review Background 1" class="imagescroll_bg_image imagescroll_bg_image_left"
+                id="review-img-1">
+            <img src="img/rev2.jpg" alt="Review Background 2" class="imagescroll_bg_image imagescroll_bg_image_right"
+                id="review-img-2">
+        </div>
+        <div class="imagescroll_content_wrapper">
+            <h2 class="imagescroll_title_heading">Weekly Review</h2>
+            <p class="imagescroll_text_description">Track your progress with weekly check-ins and adjustments to your
+                plan. Our coaches provide feedback to keep you motivated and on track.</p>
+            <button class="imagescroll_action_button">See Process</button>
+        </div>
+    </div>
+
+    <div class="imagescroll_section_block" id="results">
+        <div class="imagescroll_bg_container">
+            <img src="img/res1.jpg" alt="Results Background 1" class="imagescroll_bg_image imagescroll_bg_image_left"
+                id="results-img-1">
+            <img src="img/res2.jpg" alt="Results Background 2" class="imagescroll_bg_image imagescroll_bg_image_right"
+                id="results-img-2">
+        </div>
+        <div class="imagescroll_content_wrapper">
+            <h2 class="imagescroll_title_heading">Results</h2>
+            <p class="imagescroll_text_description">See real transformations from our members. Join thousands who have
+                achieved their fitness goals with our comprehensive approach.</p>
+            <button class="imagescroll_action_button">Join Now</button>
+        </div>
+    </div>
+
+
+    <!-- image scroll end  here   ------------/////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\--------------------->
+
+
+    <!--- moneyback section  start -->
+    <div class="reassure-hero-section">
+        <div class="reassure-hero-container">
+            <div class="reassure-message-area">
+                <h2 class="reassure-headline">Invest in Your Health, Risk-Free!</h2>
+                <p class="reassure-subheadline">If you don't see even 1% change in
+                    your physique in these 6 weeks</p>
+                <a href="http://www.thefitnesscatalyst.com" target="_blank" rel="noopener noreferrer"
+                    class="reassure-link">100% Money Back Guarantee</a>
+            </div>
+            <div class="reassure-offer-area">
+                <div class="reassure-guarantee-icon"></div>
+                <p class="reassure-guarantee-text">Transformation Program Fees </p>
+                <p class="reassure-details">Your body is your biggest asset</p>
+                <span class="reassure-seal">4999/- Only</span>
+            </div>
+        </div>
+        <div class="reassure-bg-orb reassure-orb-primary"></div>
+        <div class="reassure-bg-orb reassure-orb-secondary"></div>
+    </div>
+
+    <!--- moneyback section  end -->
+
+
+    <!-- Footer section start \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+
+
+
+
+    <!-- New Footer with Unique Class Names -->
+    <footer class="new-footer-wrapper">
+        <div class="new-footer-mainbox">
+            <div class="new-footer-contentgrid">
+                <div class="new-footer-brandzone new-footer-columnbox">
+                    <div class="new-footer-brandname">The Fitness Catalyst</div>
+                    <p>Transform your body, elevate your mind, and embrace a stronger, healthier lifestyle with our
+                        expert guidance and supportive community.</p>
+                    <div class="new-footer-socialrow">
+                        <a href="#" class="new-footer-socialicon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="new-footer-socialicon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="new-footer-socialicon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="new-footer-socialicon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="new-footer-socialicon"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="new-footer-columnbox">
+                    <h3 class="new-footer-sectiontitle">Quick Links</h3>
+                    <ul class="new-footer-linklist">
+                        <li><a href="index.html" class="new-footer-navlink">Home</a></li>
+                        <li><a href="aboutme.html" class="new-footer-navlink">About Us</a></li>
+                        <li><a href="contact.html" class="new-footer-navlink">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="new-footer-columnbox">
+                    <h3 class="new-footer-sectiontitle">Our Programs</h3>
+                    <ul class="new-footer-linklist">
+                        <li><a href="contact.html" class="new-footer-navlink">Personal Training</a></li>
+                        <li><a href="contact.html" class="new-footer-navlink">Group Fitness</a></li>
+                        <li><a href="contact.html" class="new-footer-navlink">Nutrition Coaching</a></li>
+                        <li><a href="contact.html" class="new-footer-navlink">Online Training</a></li>
+                    </ul>
+                </div>
+
+                <div class="new-footer-columnbox">
+                    <h3 class="new-footer-sectiontitle">Contact Us</h3>
+                    <ul class="new-footer-contactlist">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Fitness Street, Nashik, Maharashtra, India</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 98765 43210</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@thefitnesscatalyst.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sat: 6:00 AM - 10:00 PM</span>
+                        </li>
+                    </ul>
+
+                    <div class="new-footer-subscribe">
+                        <form class="new-footer-formgroup">
+                            <input type="email" class="new-footer-emailfield" placeholder="Your email">
+                            <button type="submit" class="new-footer-submitbtn">Join</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new-footer-copyrightzone">
+                <p class="new-footer-copyrighttext">
+                    © 2025 The Fitness Catalyst
+                    <span class="new-footer-divider"></span>
+                    <span class="new-footer-pulseanimation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <span class="new-footer-divider"></span>
+                    All Rights Reserved
+                </p>
+            </div>
+
+            <div class="new-footer-scrolltop">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </div>
+
+        <div class="new-footer-animatedbg">
+            <div class="new-footer-floatingelements">
+                <!-- Animated elements created via JavaScript -->
+            </div>
+        </div>
+    </footer>
+    <!-- Footer section end \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+    <!-- Rest of your website content -->
+    <div class="website-content">
+        <!-- Your existing content goes here -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
