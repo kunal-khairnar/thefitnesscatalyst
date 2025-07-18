@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fitness Catalyst - Policies</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Montserrat',sans-serif;background:#121212;color:#fff;line-height:1.6}
+        .policies-container{max-width:1200px;margin:0 auto;padding:0 20px}
+        .policies-header{padding:30px 0;display:flex;align-items:center;gap:10px}
+        .policies-logoicon{color:#2ECC71;font-size:24px}
+        .policies-logotext{font-size:24px;font-weight:800;text-transform:uppercase;letter-spacing:1px}
+        .policies-hero{text-align:center;padding:80px 0;background:radial-gradient(circle,rgba(46,204,113,0.1) 0%,rgba(18,18,18,1) 70%)}
+        .policies-title{font-size:48px;font-weight:800;margin-bottom:20px;position:relative}
+        .policies-title::after{content:'';position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);width:60px;height:4px;background:#2ECC71;transition:width 0.5s}
+        .policies-title:hover::after{width:200px}
+        .policies-subtitle{font-size:20px;color:#aaa;font-weight:300}
+        .policies-nav{display:flex;justify-content:center;gap:20px;margin:40px 0;flex-wrap:wrap}
+        .policies-navbtn{background:rgba(30,30,30,0.7);border:2px solid rgba(255,255,255,0.1);color:#fff;padding:12px 24px;border-radius:25px;cursor:pointer;font-weight:600;transition:all 0.3s;text-transform:uppercase;letter-spacing:1px;font-size:14px}
+        .policies-navbtn:hover,.policies-navbtn.active{background:#2ECC71;border-color:#2ECC71;transform:translateY(-2px);box-shadow:0 5px 15px rgba(46,204,113,0.3)}
+        .policies-section{background:rgba(30,30,30,0.7);border-radius:15px;padding:40px;margin-bottom:30px;border:1px solid rgba(255,255,255,0.1);transition:all 0.5s;animation:fadeInUp 0.6s ease forwards}
+        .policies-section:hover{transform:translateY(-5px);box-shadow:0 15px 30px rgba(0,0,0,0.3);border-color:#2ECC71}
+        .policies-section.hidden{display:none}
+        .policies-sectiontitle{font-size:32px;font-weight:700;margin-bottom:20px;color:#2ECC71;position:relative}
+        .policies-sectiontitle::after{content:'';position:absolute;bottom:-8px;left:0;width:50px;height:3px;background:#2ECC71;transition:width 0.5s}
+        .policies-section:hover .policies-sectiontitle::after{width:100px}
+        .policies-sectioncontent{color:#ccc;line-height:1.8}
+        .policies-sectioncontent h3{color:#2ECC71;margin:25px 0 15px 0;font-size:20px}
+        .policies-sectioncontent p{margin-bottom:15px}
+        .policies-sectioncontent ul{margin:15px 0;padding-left:20px}
+        .policies-sectioncontent li{margin-bottom:8px;position:relative}
+        .policies-sectioncontent li::before{content:'▶';color:#2ECC71;font-weight:bold;position:absolute;left:-20px}
+        .policies-highlight{color:#2ECC71;font-weight:600}
+        .policies-contact{background:linear-gradient(135deg,rgba(46,204,113,0.1) 0%,rgba(18,18,18,0.9) 100%);border-radius:15px;padding:40px;margin-top:40px;text-align:center;border:1px solid rgba(46,204,113,0.3)}
+        .policies-contacttitle{font-size:28px;font-weight:700;margin-bottom:20px;color:#2ECC71}
+        .policies-contactinfo{display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin-top:20px}
+        .policies-contactitem{display:flex;align-items:center;gap:10px;color:#ccc}
+        .policies-contactitem i{color:#2ECC71;font-size:20px}
+        @keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+        @media(max-width:768px){
+            .policies-title{font-size:36px}
+            .policies-nav{flex-direction:column;align-items:center}
+            .policies-section{padding:30px 20px}
+            .policies-sectiontitle{font-size:28px}
+            .policies-contactinfo{flex-direction:column;gap:20px}
+        }
+        @media(max-width:480px){
+            .policies-container{padding:0 15px}
+            .policies-title{font-size:28px}
+            .policies-section{padding:20px 15px}
+            .policies-sectiontitle{font-size:24px}
+        }
+    </style>
+
+
+<body>
+    <div class="policies-container">
+        <header class="policies-header">
+              <!-- Main Navigation -->
+    <nav class="lionfit-main-nav" id="lionfitMainNav">
+        <a href="#" class="lionfit-logo-text">FITNESS CATALYST</a>
+        <div class="lionfit-hamburger" id="lionfitHamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="lionfit-nav-links" id="lionfitNavLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About</a></li>
+
+            <li><a href="results.html">Results</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="policies.html">Policies</a></li>
+        </ul>
+    </nav>
+        </header>
+
+        <section class="policies-hero">
+            <h1 class="policies-title">Legal Policies</h1>
+            <p class="policies-subtitle">Your rights, our responsibilities, and <span class="policies-highlight">transparent guidelines</span></p>
+        </section>
+
+        <nav class="policies-nav">
+            <button class="policies-navbtn active" data-section="terms">Terms & Conditions</button>
+            <button class="policies-navbtn" data-section="privacy">Privacy Policy</button>
+            <button class="policies-navbtn" data-section="refund">Refund & Cancellation</button>
+            <button class="policies-navbtn" data-section="return">Return Policy</button>
+        </nav>
+
+        <div class="policies-content">
+            <section class="policies-section" id="terms">
+                <h2 class="policies-sectiontitle">Terms & Conditions</h2>
+                <div class="policies-sectioncontent">
+                    <h3>Electronic Record</h3>
+                    <p>This document is an electronic record under the Information Technology Act, 2000. Generated by computer system without requiring physical signatures.</p>
+                    
+                    <h3>Platform Ownership</h3>
+                    <p>Owned by <span class="policies-highlight">thefitnesscatalyst</span>, registered at chitra vihar, plot no 50, D road, MIDC Area, satpur, nashik, Maharashtra, India.</p>
+                    
+                    <h3>User Obligations</h3>
+                    <ul>
+                        <li>Provide accurate information during registration</li>
+                        <li>Be responsible for all account activities</li>
+                        <li>Use Platform only for lawful purposes</li>
+                        <li>Pay all service charges</li>
+                        <li>Respect intellectual property rights</li>
+                    </ul>
+                    
+                    <h3>Liability</h3>
+                    <p>No warranty on accuracy or completeness of information. Use at your own risk. Governed by Indian laws with jurisdiction in <span class="policies-highlight">Nashik, Maharashtra</span>.</p>
+                </div>
+            </section>
+
+            <section class="policies-section hidden" id="privacy">
+                <h2 class="policies-sectiontitle">Privacy Policy</h2>
+                <div class="policies-sectioncontent">
+                    <h3>Data Collection</h3>
+                    <ul>
+                        <li>Personal info (name, address, contact details)</li>
+                        <li>Payment information</li>
+                        <li>Usage behavior and preferences</li>
+                        <li>Transaction data</li>
+                    </ul>
+                    
+                    <h3>Data Usage</h3>
+                    <ul>
+                        <li>Service delivery and customer support</li>
+                        <li>Order processing and fulfillment</li>
+                        <li>Fraud prevention and security</li>
+                        <li>Marketing and communication</li>
+                    </ul>
+                    
+                    <h3>Data Sharing</h3>
+                    <p>Shared with group entities, service providers, and authorities when legally required. <span class="policies-highlight">You can access, modify, or delete your data</span> anytime.</p>
+                    
+                    <h3>Security</h3>
+                    <p>Reasonable security measures implemented, but internet transmission cannot be 100% guaranteed secure.</p>
+                </div>
+            </section>
+
+            <section class="policies-section hidden" id="refund">
+                <h2 class="policies-sectiontitle">Refund & Cancellation</h2>
+                <div class="policies-sectioncontent">
+                    <h3>Cancellation</h3>
+                    <p>Requests accepted within <span class="policies-highlight">30 days</span> of order placement, unless already shipped or out for delivery.</p>
+                    
+                    <h3>Perishable Items</h3>
+                    <p>No cancellations for perishable items (flowers, food). Refund available if quality issues proven.</p>
+                    
+                    <h3>Damaged Items</h3>
+                    <p>Report within <span class="policies-highlight">30 days</span> of receipt. Refund processed after seller verification.</p>
+                    
+                    <h3>Processing Time</h3>
+                    <p>Approved refunds processed within 30 days. Warranty items referred to manufacturers.</p>
+                </div>
+            </section>
+
+            <section class="policies-section hidden" id="return">
+                <h2 class="policies-sectiontitle">Return Policy</h2>
+                <div class="policies-sectioncontent">
+                    <h3>Return Window</h3>
+                    <p>Returns accepted within <span class="policies-highlight">30 days</span> from purchase date.</p>
+                    
+                    <h3>Return Conditions</h3>
+                    <ul>
+                        <li>Item must be unused and in original condition</li>
+                        <li>Original packaging required</li>
+                        <li>Sale items may not be eligible</li>
+                        <li>Only defective/damaged items replaced</li>
+                    </ul>
+                    
+                    <h3>Process</h3>
+                    <p>Email notification sent upon receipt. Quality check performed before approval. Processing according to our policies.</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="policies-contact">
+            <h3 class="policies-contacttitle">Need Help?</h3>
+            <div class="policies-contactinfo">
+                <div class="policies-contactitem">
+                    <i class="fas fa-envelope"></i>
+                    <span>support@thefitnesscatalyst.com</span>
+                </div>
+                <div class="policies-contactitem">
+                    <i class="fas fa-phone"></i>
+                    <span>Monday - Friday (9:00 - 18:00)</span>
+                </div>
+                <div class="policies-contactitem">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Nashik, Maharashtra, India</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- New Footer with Unique Class Names -->
+    <footer class="new-footer-wrapper">
+        <div class="new-footer-mainbox">
+            <div class="new-footer-contentgrid">
+                <div class="new-footer-brandzone new-footer-columnbox">
+                    <div class="new-footer-brandname">The Fitness Catalyst</div>
+                    <p>Transform your body, elevate your mind, and embrace a stronger, healthier lifestyle with our
+                        expert guidance and supportive community.</p>
+                    <div class="new-footer-socialrow">
+                        <a href="#" class="new-footer-socialicon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="new-footer-socialicon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="new-footer-socialicon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="new-footer-socialicon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="new-footer-socialicon"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="new-footer-columnbox">
+                    <h3 class="new-footer-sectiontitle">Quick Links</h3>
+                    <ul class="new-footer-linklist">
+                        <li><a href="index.html" class="new-footer-navlink">Home</a></li>
+                        <li><a href="aboutme.html" class="new-footer-navlink">About Us</a></li>
+                        <li><a href="contact.html" class="new-footer-navlink">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="new-footer-columnbox">
+                    <h3 class="new-footer-sectiontitle">Our Programs</h3>
+                    <ul class="new-footer-linklist">
+                        <li><a href="contact.html" class="new-footer-navlink">Personal Training</a></li>
+                        <li><a href="contact.html" class="new-footer-navlink">Group Fitness</a></li>
+                        <li><a href="contact.html" class="new-footer-navlink">Nutrition Coaching</a></li>
+                        <li><a href="contact.html" class="new-footer-navlink">Online Training</a></li>
+                    </ul>
+                </div>
+
+                <div class="new-footer-columnbox">
+                    <h3 class="new-footer-sectiontitle">Contact Us</h3>
+                    <ul class="new-footer-contactlist">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Fitness Street, Nashik, Maharashtra, India</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 98765 43210</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@thefitnesscatalyst.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sat: 6:00 AM - 10:00 PM</span>
+                        </li>
+                    </ul>
+
+                    <div class="new-footer-subscribe">
+                        <form class="new-footer-formgroup">
+                            <input type="email" class="new-footer-emailfield" placeholder="Your email">
+                            <button type="submit" class="new-footer-submitbtn">Join</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new-footer-copyrightzone">
+                <p class="new-footer-copyrighttext">
+                    © 2025 The Fitness Catalyst
+                    <span class="new-footer-divider"></span>
+                    <span class="new-footer-pulseanimation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <span class="new-footer-divider"></span>
+                    All Rights Reserved
+                </p>
+            </div>
+
+            <div class="new-footer-scrolltop">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </div>
+
+        <div class="new-footer-animatedbg">
+            <div class="new-footer-floatingelements">
+                <!-- Animated elements created via JavaScript -->
+            </div>
+        </div>
+    </footer>
+    <!-- Footer section end \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+    <script>
+        const navBtns = document.querySelectorAll('.policies-navbtn');
+        const sections = document.querySelectorAll('.policies-section');
+
+        navBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const target = btn.dataset.section;
+                
+                navBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                sections.forEach(s => s.classList.add('hidden'));
+                document.getElementById(target).classList.remove('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Results</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Main Navigation -->
+  <nav class="lionfit-main-nav" id="lionfitMainNav">
+    <a href="#" class="lionfit-logo-text">FITNESS CATALYST</a>
+    <div class="lionfit-hamburger" id="lionfitHamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="lionfit-nav-links" id="lionfitNavLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutme.html">About</a></li>
+
+      <li><a href="results.html">Results</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="policies.html">Policies</a></li>
+    </ul>
+  </nav>
+  </div>
+
+
+
+
+  <div class="results-container">
+    <div class="results-header">
+      <h1 class="results-title">Your Fitness <span>Results</span></h1>
+      <p class="results-subtitle">Track your progress, celebrate your achievements, and stay motivated on your fitness
+        journey. See how far you've come and how much closer you are to your goals.</p>
+    </div>
+
+    <div class="results-filter-container">
+      <h2 class="results-filter-title">Progress Overview</h2>
+      <div class="results-filter-controls">
+        <select class="results-filter-select" aria-label="Filter by program">
+          <option>All Programs</option>
+          <option>Weight Loss</option>
+          <option>Muscle Building</option>
+          <option>Endurance Training</option>
+          <option>HIIT Program</option>
+        </select>
+        <select class="results-filter-select" aria-label="Sort by">
+          <option>Latest First</option>
+          <option>Oldest First</option>
+          <option>Most Progress</option>
+          <option>Highest Intensity</option>
+        </select>
+        <button class="results-filter-btn">Apply Filter</button>
+      </div>
+    </div>
+
+    <div class="results-stats">
+      <div class="results-stat-card">
+        <div class="results-stat-number">28</div>
+        <h3 class="results-stat-title">Workouts Completed</h3>
+        <p class="results-stat-desc">Total training sessions in your active program</p>
+      </div>
+
+      <div class="results-stat-card">
+        <div class="results-stat-number">7.5</div>
+        <h3 class="results-stat-title">Weight Lost (lbs)</h3>
+        <p class="results-stat-desc">Total weight reduction since program start</p>
+      </div>
+
+      <div class="results-stat-card">
+        <div class="results-stat-number">89<span>%</span></div>
+        <h3 class="results-stat-title">Goal Progress</h3>
+        <p class="results-stat-desc">You're nearly there! Keep pushing!</p>
+      </div>
+    </div>
+
+    <h2 class="results-progress-title">Weekly Progress</h2>
+
+    <div class="results-cards">
+      <div class="results-card">
+        <div class="results-card-image">
+          <img src="img/week1.png" alt="Week 1 Progress">
+          <div class="results-card-date">May 9, 2025</div>
+        </div>
+        <div class="results-card-content">
+          <h3 class="results-card-title">Week 1 Milestone</h3>
+          <p class="results-card-desc">Completed initial assessment and 4 workouts. Established baseline measurements
+            and nutrition plan.</p>
+          <div class="results-card-stats">
+            <div class="results-card-stat">
+              <div class="results-card-stat-value">165</div>
+              <div class="results-card-stat-label">Weight (lbs)</div>
+            </div>
+            <div class="results-card-stat">
+              <div class="results-card-stat-value">4</div>
+              <div class="results-card-stat-label">Workouts</div>
+            </div>
+            <div class="results-card-stat">
+              <div class="results-card-stat-value">25%</div>
+              <div class="results-card-stat-label">Intensity</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="results-card">
+        <div class="results-card-image">
+          <img src="img/week2.png" alt="Week 2 Progress">
+          <div class="results-card-date">May 16, 2025</div>
+        </div>
+        <div class="results-card-content">
+          <h3 class="results-card-title">Week 2 Breakthrough</h3>
+          <p class="results-card-desc">Increased workout intensity and adjusted nutrition plan. Added an extra cardio
+            session this week.</p>
+          <div class="results-card-stats">
+            <div class="results-card-stat">
+              <div class="results-card-stat-value">162.5</div>
+              <div class="results-card-stat-label">Weight (lbs)</div>
+            </div>
+            <div class="results-card-stat">
+              <div class="results-card-stat-value">5</div>
+              <div class="results-card-stat-label">Workouts</div>
+            </div>
+            <div class="results-card-stat">
+              <div class="results-card-stat-value">40%</div>
+              <div class="results-card-stat-label">Intensity</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="results-card">
+        <div class="results-card-image">
+          <img src="img/week3.png" alt="Week 3 Progress">
+          <div class="results-card-date">May 23, 2025</div>
+        </div>
+        <div class="results-card-content">
+          <h3 class="results-card-title">Week 3 Challenge</h3>
+          <p class="results-card-desc">Added high-intensity intervals and completed all scheduled workouts with improved
+            form.</p>
+          <div class="results-card-stats">
+            <div class="results-card-stat">
+              <div class="results-card-stat-value">160</div>
+              <div class="results-card-stat-label">Weight (lbs)</div>
+            </div>
+            <div class="results-card-stat">
+              <div class="results-card-stat-value">6</div>
+              <div class="results-card-stat-label">Workouts</div>
+            </div>
+            <div class="results-card-stat">
+              <div class="results-card-stat-value">65%</div>
+              <div class="results-card-stat-label">Intensity</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="results-card">
+        <div class="results-card-image">
+          <img src="img/week4.png" alt="Week 4 Progress">
+          <div class="results-card-date">May 30, 2025</div>
+        </div>
+        <div class="results-card-content">
+          <h3 class="results-card-title">Week 4 Transformation</h3>
+          <p class="results-card-desc">Increased all lifting weights by 10% and added an extra strength session.
+            Nutrition compliance at 95%.</p>
+          <div class="results-card-stats">
+            <div class="results-card-stat">
+              <div class="results-card-stat-value">157.5</div>
+              <div class="results-card-stat-label">Weight (lbs)</div>
+            </div>
+            <div class="results-card-stat">
+              <div class="results-card-stat-value">7</div>
+              <div class="results-card-stat-label">Workouts</div>
+            </div>
+            <div class="results-card-stat">
+              <div class="results-card-stat-value">80%</div>
+              <div class="results-card-stat-label">Intensity</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <!-- New Footer with Unique Class Names -->
+  <footer class="new-footer-wrapper">
+    <div class="new-footer-mainbox">
+      <div class="new-footer-contentgrid">
+        <div class="new-footer-brandzone new-footer-columnbox">
+          <div class="new-footer-brandname">The Fitness Catalyst</div>
+          <p>Transform your body, elevate your mind, and embrace a stronger, healthier lifestyle with our
+            expert guidance and supportive community.</p>
+          <div class="new-footer-socialrow">
+            <a href="#" class="new-footer-socialicon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="new-footer-socialicon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="new-footer-socialicon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="new-footer-socialicon"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="new-footer-socialicon"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="new-footer-columnbox">
+          <h3 class="new-footer-sectiontitle">Quick Links</h3>
+          <ul class="new-footer-linklist">
+            <li><a href="index.html" class="new-footer-navlink">Home</a></li>
+            <li><a href="aboutme.html" class="new-footer-navlink">About Us</a></li>
+            <li><a href="contact.html" class="new-footer-navlink">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="new-footer-columnbox">
+          <h3 class="new-footer-sectiontitle">Our Programs</h3>
+          <ul class="new-footer-linklist">
+            <li><a href="contact.html" class="new-footer-navlink">Personal Training</a></li>
+            <li><a href="contact.html" class="new-footer-navlink">Group Fitness</a></li>
+            <li><a href="contact.html" class="new-footer-navlink">Nutrition Coaching</a></li>
+            <li><a href="contact.html" class="new-footer-navlink">Online Training</a></li>
+          </ul>
+        </div>
+
+        <div class="new-footer-columnbox">
+          <h3 class="new-footer-sectiontitle">Contact Us</h3>
+          <ul class="new-footer-contactlist">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span>123 Fitness Street, Nashik, Maharashtra, India</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <span>+91 98765 43210</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span>info@thefitnesscatalyst.com</span>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Mon-Sat: 6:00 AM - 10:00 PM</span>
+            </li>
+          </ul>
+
+          <div class="new-footer-subscribe">
+            <form class="new-footer-formgroup">
+              <input type="email" class="new-footer-emailfield" placeholder="Your email">
+              <button type="submit" class="new-footer-submitbtn">Join</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="new-footer-copyrightzone">
+        <p class="new-footer-copyrighttext">
+          © 2025 The Fitness Catalyst
+          <span class="new-footer-divider"></span>
+          <span class="new-footer-pulseanimation">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span class="new-footer-divider"></span>
+          All Rights Reserved
+        </p>
+      </div>
+
+      <div class="new-footer-scrolltop">
+        <i class="fas fa-chevron-up"></i>
+      </div>
+    </div>
+
+    <div class="new-footer-animatedbg">
+      <div class="new-footer-floatingelements">
+        <!-- Animated elements created via JavaScript -->
+      </div>
+    </div>
+  </footer>
+  <!-- Footer section end \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+
+</body>
+
+</html>
