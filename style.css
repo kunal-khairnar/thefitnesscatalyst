@@ -27,7 +27,14 @@ body {
   background-color: #111;
 }
 
-
+.noto-sans-header {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 200;
+}
 
 
 /* **********************************************
@@ -97,6 +104,7 @@ Header section start ---------------------------------------
   height: auto;
   display: block;
   margin-bottom: 5px;
+  
   /* Space between lines */
 }
 
@@ -112,11 +120,12 @@ Header section start ---------------------------------------
   display: inline-block;
   font-size: clamp(2.5rem, 8vw, 6rem);
   /* Responsive font size */
-  font-weight: 900;
+  font-weight: 400;
   text-transform: uppercase;
   line-height: 1.1;
   /* Adjusted line height */
   color: #ffffff;
+  font-family: popins, sans-serif;
   /* White text */
   /* Remove individual animation from .title-word itself */
 }
